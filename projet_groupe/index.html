@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centre Médical - Services de Santé</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gray-50">
+    <div class="bg-gray-900 text-white py-2">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="tel:+1234567890" class="flex items-center hover:text-gray-300">
+                    <i class="fas fa-phone mr-2"></i>
+                    +221 77 262 38 81
+                </a>
+                <a href="mailto:contact@medicalcenter.com" class="flex items-center hover:text-gray-300">
+                    <i class="fas fa-envelope mr-2"></i>
+                    contact@medicalcenter.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-300">Nous Contacter</a>
+                <a href="./tableaubord.html" class="hover:text-gray-300">Mes Rendez-vous</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-8xl mx-auto px-12 sm:px-6 lg:px-12">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0">
+                        <img class="h-16 w-auto" src="./image/logo.png" alt="Centre Médical">
+                    </a>
+                    <div class="hidden md:ml-12 md:flex md:space-x-8">
+                        <a href="./index.html"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">ACCUEIL</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">SERVICES</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">CONTACT</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">À
+                            PROPOS</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button
+                        class="!rounded-button bg-red-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-300 shadow-md"><a
+                            href="./rdv.html">PRENDRE RENDEZ-VOUS</a></button>
+                    <button
+                        class="!rounded-button bg-gray-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-500 shadow-md"><a
+                            href="./login.html">CONNEXION</a></button>
+                    <button
+                        class="!rounded-button bg-gray-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-500 shadow-md"><a
+                            href="./register.html">S'INSCRIRE</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-16 lg:py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">Votre Santé
+                            est Notre Priorité</h1>
+                        <p class="mt-6 text-xl text-gray-500">Prenez rendez-vous avec nos médecins expérimentés. Nous
+                            offrons des services de santé complets pour assurer votre bien-être.</p>
+                        <div class="mt-8 flex space-x-4">
+                            <button
+                                class="!rounded-button bg-custom text-white px-6 py-3 text-base font-medium">Réservez
+                                Maintenant</button>
+                            <button class="!rounded-button bg-custom/10 text-custom px-6 py-3 text-base font-medium">En
+                                Savoir Plus</button>
+                        </div>
+                    </div>
+                    <div class="relative h-[500px]">
+                        <img src="./image/main.jpeg" alt="Établissement Médical"
+                            class="rounded-lg shadow-lg object-cover w-full h-full" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-16">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-custom">Nos Services</h2>
+                    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Solutions de Santé
+                        Complètes</p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
+                        <div class="mb-6">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-custom/10">
+                                <i class="fas fa-user-md text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Consultation Générale</h3>
+                        <p class="mt-4 text-base text-gray-500">Examens réguliers et consultations avec nos médecins
+                            généralistes expérimentés.</p>
+                    </div>
+
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
+                        <div class="mb-6">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-custom/10">
+                                <i class="fas fa-heartbeat text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Soins Spécialisés</h3>
+                        <p class="mt-4 text-base text-gray-500">Soins experts dans diverses spécialités médicales, y
+                            compris la cardiologie et l'orthopédie.</p>
+                    </div>
+
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-8 shadow-sm">
+                        <div class="mb-6">
+                            <div class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-custom/10">
+                                <i class="fas fa-ambulance text-custom text-xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-900">Services d'Urgence</h3>
+                        <p class="mt-4 text-base text-gray-500">Services médicaux d'urgence 24/7 avec des installations
+                            à la pointe de la technologie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-16" id="doctors-section">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-custom">Notre Équipe Médicale</h2>
+                    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Rencontrez Nos Médecins
+                        Experts</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm text-center">
+                        <img src="./image/doc.png" alt="Dr. John Smith"
+                            class="w-40 h-40 rounded-full mx-auto mb-4 object-cover" />
+                        <h3 class="text-xl font-semibold text-gray-900">Dr. John Smith</h3>
+                        <p class="text-sm text-gray-500 mt-1">Cardiologue</p>
+                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm font-medium mt-4"><a
+                                href="./login.html"> Prendre Rendez-vous</a></button>
+                    </div>
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm text-center">
+                        <img src="./image/doc4.png" alt="Dr. Sarah Johnson"
+                            class="w-40 h-40 rounded-full mx-auto mb-4 object-cover" />
+                        <h3 class="text-xl font-semibold text-gray-900">Dr. Sarah Johnson</h3>
+                        <p class="text-sm text-gray-500 mt-1">Neurologue</p>
+                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm font-medium mt-4"><a
+                                href="./login.html">Prendre Rendez-vous</a></button>
+                    </div>
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm text-center">
+                        <img src="./image/doc.png" alt="Dr. David Chen"
+                            class="w-40 h-40 rounded-full mx-auto mb-4 object-cover" />
+                        <h3 class="text-xl font-semibold text-gray-900">Dr. David Chen</h3>
+                        <p class="text-sm text-gray-500 mt-1">Pédiatre</p>
+                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm font-medium mt-4"><a
+                                href="./login.html">Prendre Rendez-vous</a></button>
+                    </div>
+                    <div class="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm text-center">
+                        <img src="./image/doc5.png" alt="Dr. Priya Patel"
+                            class="w-40 h-40 rounded-full mx-auto mb-4 object-cover" />
+                        <h3 class="text-xl font-semibold text-gray-900">Dr. Priya Patel</h3>
+                        <p class="text-sm text-gray-500 mt-1">Dermatologue</p>
+                        <button class="!rounded-button bg-custom text-white px-4 py-2 text-sm font-medium mt-4"><a
+                                href="./login.html">Prendre Rendez-vous</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-8xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <p>© 2025 <b>abdou</b> <i>Izayid</i> <b>Hadji</b> Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

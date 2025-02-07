@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Centre Médical - Tableau de Bord </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+</head>
+
+<body class="bg-gray-50 font-[&#39;Inter&#39;]">
+    <div class="bg-gray-900 text-white py-2">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="tel:+1234567890" class="flex items-center hover:text-gray-300">
+                    <i class="fas fa-phone mr-2"></i>
+                    +221 77 262 38 81
+                </a>
+                <a href="mailto:contact@medicalcenter.com" class="flex items-center hover:text-gray-300">
+                    <i class="fas fa-envelope mr-2"></i>
+                    contact@medicalcenter.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-300">Nous Contacter</a>
+                <a href="./login.html" class="hover:text-gray-300">Mes Rendez-vous</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-8xl mx-auto px-12 sm:px-6 lg:px-12">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0">
+                        <img class="h-16 w-auto" src="./image/logo.png" alt="Centre Médical">
+                    </a>
+                    <div class="hidden md:ml-12 md:flex md:space-x-8">
+                        <a href="./index.html"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">ACCUEIL</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">SERVICES</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">CONTACT</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">À
+                            PROPOS</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button
+                        class="!rounded-button bg-red-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-300 shadow-md"><a
+                            href="./login.html">PRENDRE RENDEZ-VOUS</a></button>
+                    <button
+                        class="!rounded-button bg-gray-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-500 shadow-md"><a
+                            href="./login.html">CONNEXION</a></button>
+                    <button
+                        class="!rounded-button bg-gray-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-500 shadow-md"><a
+                            href="./register.html">S'INSCRIRE</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-8xl mx-auto px-4 py-8">
+        <div class="flex gap-8">
+            <div class="w-1/4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="text-center mb-6">
+                        <img src="./image/male-head.png" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
+                        <h2 class="text-xl font-semibold">Bonjour <span class="text-custom">Abdou</span></h2>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="#" class="flex items-center space-x-3 p-3 rounded-lg bg-gray-50 text-custom">
+                            <i class="fas fa-calendar-check w-5"></i>
+                            <span>Mes Rendez-vous</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-user w-5"></i>
+                            <span>Mon Profil</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-lock w-5"></i>
+                            <span>Changer le Mot de Passe</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50">
+                            <i class="fas fa-headset w-5"></i>
+                            <span>Support</span>
+                        </a>
+                        <a href="#" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-gray-50 text-red-600">
+                            <i class="fas fa-sign-out-alt w-5"></i>
+                            <span>Déconnexion</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="w-3/4">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <h2 class="text-xl font-semibold mb-6">Mes Rendez-vous</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b">
+                                    <th class="text-left py-3 px-4">N° Rdv</th>
+                                    <th class="text-left py-3 px-4">Date Rdv</th>
+                                    <th class="text-left py-3 px-4">Heure Rdv</th>
+                                    <th class="text-left py-3 px-4">Médecin &<br> consultations </th>
+                                    <th class="text-left py-3 px-4">Statut</th>
+                                    <th class="text-left py-3 px-4">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4">AHI001</td>
+                                    <td class="py-3 px-4">29 Jan, 2025</td>
+                                    <td class="py-3 px-4">04:00 PM</td>
+                                    <td class="py-3 px-4">Dr. Smith <br> Généraliste</td>
+                                    <td class="py-3 px-4"><span
+                                            class="bg-custom/10 text-custom px-3 py-1 rounded-full text-sm">Réservé</span>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <div class="flex space-x-2">
+                                            <button
+                                                class="!rounded-button bg-custom text-white px-4 py-1 text-sm hover:bg-custom/90"><i
+                                                    class="fas fa-eye mr-1"></i> Voir</button>
+                                            <button
+                                                class="!rounded-button bg-yellow-500 text-white px-4 py-1 text-sm hover:bg-yellow-600"><i
+                                                    class="fas fa-edit mr-1"></i> Modifier</button>
+                                            <button
+                                                class="!rounded-button bg-red-500 text-white px-4 py-1 text-sm hover:bg-red-600"><i
+                                                    class="fas fa-times mr-1"></i> Annuler</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4">AHI002</td>
+                                    <td class="py-3 px-4">20 Févr, 2025</td>
+                                    <td class="py-3 px-4">09:00 AM</td>
+                                    <td class="py-3 px-4">Dr. Priya Patel <br> Dermatologue</td>
+                                    <td class="py-3 px-4"><span
+                                            class="bg-red-500 text-custom px-3 py-1 rounded-full text-sm">en
+                                            attente</span>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <div class="flex space-x-2">
+                                            <button
+                                                class="!rounded-button bg-custom text-white px-4 py-1 text-sm hover:bg-custom/90"><i
+                                                    class="fas fa-eye mr-1"></i> Voir</button>
+                                            <button
+                                                class="!rounded-button bg-yellow-500 text-white px-4 py-1 text-sm hover:bg-yellow-600"><i
+                                                    class="fas fa-edit mr-1"></i> Modifier</button>
+                                            <button
+                                                class="!rounded-button bg-red-500 text-white px-4 py-1 text-sm hover:bg-red-600"><i
+                                                    class="fas fa-times mr-1"></i> Annuler</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4">AHI003</td>
+                                    <td class="py-3 px-4">29 Févr, 2025</td>
+                                    <td class="py-3 px-4">12:00 PM</td>
+                                    <td class="py-3 px-4">Dr. Sarah Johnson <br> Neurologue</td>
+                                    <td class="py-3 px-4"><span
+                                            class="bg-custom/10 text-custom px-3 py-1 rounded-full text-sm">Réservé</span>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <div class="flex space-x-2">
+                                            <button
+                                                class="!rounded-button bg-custom text-white px-4 py-1 text-sm hover:bg-custom/90"><i
+                                                    class="fas fa-eye mr-1"></i> Voir</button>
+                                            <button
+                                                class="!rounded-button bg-yellow-500 text-white px-4 py-1 text-sm hover:bg-yellow-600"><i
+                                                    class="fas fa-edit mr-1"></i> Modifier</button>
+                                            <button
+                                                class="!rounded-button bg-red-500 text-white px-4 py-1 text-sm hover:bg-red-600"><i
+                                                    class="fas fa-times mr-1"></i> Annuler</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="py-3 px-4">AHI004</td>
+                                    <td class="py-3 px-4">30 Févr, 2025</td>
+                                    <td class="py-3 px-4">10:00 AM</td>
+                                    <td class="py-3 px-4">Dr. Johnson <br> Pédiatre</td>
+                                    <td class="py-3 px-4"><span
+                                            class="bg-green-500 text-custom px-3 py-1 rounded-full text-sm">Confirmé</span>
+                                    </td>
+                                    <td class="py-3 px-4">
+                                        <div class="flex space-x-2">
+                                            <button
+                                                class="!rounded-button bg-custom text-white px-4 py-1 text-sm hover:bg-custom/90"><i
+                                                    class="fas fa-eye mr-1"></i> Voir</button>
+                                            <button
+                                                class="!rounded-button bg-yellow-500 text-white px-4 py-1 text-sm hover:bg-yellow-600"><i
+                                                    class="fas fa-edit mr-1"></i> Modifier</button>
+                                            <button
+                                                class="!rounded-button bg-red-500 text-white px-4 py-1 text-sm hover:bg-red-600"><i
+                                                    class="fas fa-times mr-1"></i> Annuler</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

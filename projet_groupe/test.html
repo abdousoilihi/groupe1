@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier de Disponibilité</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .calendar {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .date-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .time-slot {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .time-slot.unavailable {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .time-slot:hover:not(.unavailable) {
+            background-color: #0056b3;
+        }
+
+        .status {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .status div {
+            display: flex;
+            align-items: center;
+        }
+
+        .status div .circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .status .available .circle {
+            background-color: #007bff;
+        }
+
+        .status .unavailable .circle {
+            background-color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calendar">
+        <div class="date-header">
+            <div>November 04, 2023</div>
+            <div>Saturday</div>
+        </div>
+        <div class="time-slots">
+            <div class="time-slot">09:00 AM</div>
+            <div class="time-slot">09:40 AM</div>
+            <div class="time-slot unavailable">10:00 AM</div>
+            <div class="time-slot">10:20 AM</div>
+            <div class="time-slot">11:00 AM</div>
+            <div class="time-slot">11:40 AM</div>
+            <div class="time-slot">12:00 PM</div>
+            <div class="time-slot">12:20 PM</div>
+            <div class="time-slot">12:40 PM</div>
+        </div>
+    </div>
+
+    <div class="calendar">
+        <div class="date-header">
+            <div>November 06, 2023</div>
+            <div>Monday</div>
+        </div>
+        <div class="time-slots">
+            <div class="time-slot">10:00 AM</div>
+            <div class="time-slot">11:00 AM</div>
+            <div class="time-slot unavailable">11:30 AM</div>
+            <div class="time-slot">12:00 PM</div>
+            <div class="time-slot">12:30 PM</div>
+        </div>
+    </div>
+
+    <div class="status">
+        <div class="available">
+            <div class="circle"></div> Available
+        </div>
+        <div class="unavailable">
+            <div class="circle"></div> Not Available
+        </div>
+    </div>
+
+</body>
+
+</html>

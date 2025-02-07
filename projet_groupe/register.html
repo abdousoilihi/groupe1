@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Centre Médical -Inscription </title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <div class="bg-gray-900 text-white py-2">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="tel:+1234567890" class="flex items-center hover:text-gray-300">
+                    <i class="fas fa-phone mr-2"></i>
+                    +221 77 262 38 81
+                </a>
+                <a href="mailto:contact@medicalcenter.com" class="flex items-center hover:text-gray-300">
+                    <i class="fas fa-envelope mr-2"></i>
+                    contact@medicalcenter.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-300">Nous Contacter</a>
+                <a href="./login.html" class="hover:text-gray-300">Mes Rendez-vous</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-8xl mx-auto px-12 sm:px-6 lg:px-12">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0">
+                        <img class="h-16 w-auto" src="./image/logo.png" alt="Centre Médical">
+                    </a>
+                    <div class="hidden md:ml-12 md:flex md:space-x-8">
+                        <a href="./index.html"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">ACCUEIL</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">SERVICES</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">CONTACT</a>
+                        <a href="#"
+                            class="text-gray-900 inline-flex items-center px-1 pt-1 font-medium hover:text-blue-500">À
+                            PROPOS</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button
+                        class="!rounded-button bg-red-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-300 shadow-md"><a
+                            href="./rdv.html">PRENDRE
+                            RENDEZ-VOUS</a></button>
+                    <button
+                        class="!rounded-button bg-gray-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-500 shadow-md"><a
+                            href="./login.html">CONNEXION</a></button>
+                    <button
+                        class="!rounded-button bg-gray-100 text-gray-900 px-4 py-2 font-medium hover:bg-blue-500 shadow-md"><a
+                            href="./register.html">S'INSCRIRE</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relative bg-gray-900 h-48">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="./image/cover.png" alt="Établissement Médical">
+            <div class="absolute inset-0 bg-gray-900 opacity-75"></div>
+        </div>
+        <div class="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+            <h1 class="text-3xl font-bold text-white">Inscription</h1>
+            <div class="flex items-center space-x-2 text-sm text-gray-300 mt-2">
+                <a href="/" class="hover:text-white">Accueil</a>
+                <span>/</span>
+                <span>Inscription</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-8xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <h2 class="text-2xl font-semibold mb-8">Créer un Compte</h2>
+                <form id="registerForm" class="space-y-6">
+                    <div class="relative">
+                        <i class="fas fa-user absolute left-3 top-3 text-gray-400"></i>
+                        <input type="text" placeholder="Nom Complet"
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-button focus:border-custom focus:ring-1 focus:ring-custom">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-envelope absolute left-3 top-3 text-gray-400"></i>
+                        <input type="email" placeholder="Adresse Email"
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-button focus:border-custom focus:ring-1 focus:ring-custom">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-lock absolute left-3 top-3 text-gray-400"></i>
+                        <input type="password" placeholder="Mot de passe"
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-button focus:border-custom focus:ring-1 focus:ring-custom">
+                    </div>
+                    <div class="relative">
+                        <i class="fas fa-check-circle absolute left-3 top-3 text-gray-400"></i>
+                        <input type="password" placeholder="Confirmer le Mot de passe"
+                            class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-button focus:border-custom focus:ring-1 focus:ring-custom">
+                    </div>
+                    <button type="submit"
+                        class="!rounded-button w-full bg-custom text-white py-2 hover:bg-custom/90">S'inscrire</button>
+                    <div class="text-center">
+                        <p class="text-gray-600">Vous avez déjà un compte ?</p>
+                        <a href="login.html" class="text-custom hover:text-custom/90 font-medium">Connectez-vous ici</a>
+                    </div>
+                </form>
+            </div>
+            <div class="hidden md:block">
+                <img src="./image/log1.jpeg" alt="Médecin" class="w-full h-full object-cover rounded-lg">
+            </div>
+        </div>
+    </div>
+
+    <div id="successModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4">
+                    <i class="fas fa-check text-2xl text-green-500"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Compte créé avec succès !</h3>
+                <p class="text-gray-600 mb-6">Votre compte a été créé. Vous pouvez maintenant vous connecter pour
+                    accéder à votre tableau de bord.</p>
+                <button class="!rounded-button bg-custom text-white px-6 py-2 hover:bg-custom/90"
+                    onclick="closeModal()">Continuer</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-8xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <p>© 2025 <b>abdou</b> <i>Izayid</i> <b> Hadji </b> Tous droits réservés.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            document.getElementById('successModal').classList.remove('hidden');
+        });
+
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+        }
+    </script>
+</body>
+
+</html>
